@@ -70,6 +70,7 @@ describe "group of tests" {
 	test "usar bicicleta milena" {
 		assert.notThat(bicicleta.puedeSerUsadoPor(milena))	
 //		/*TODO: milena usa la bicicleta (cosa que no puede hacer!) */
+//TODO: validar que no se pueda hacer
 	}
 //	
 	test "usar minitramp leo" {
@@ -83,10 +84,12 @@ describe "group of tests" {
 		assert.notThat(minitramp.puedeSerUsadoPor(milena))	
 //		/*TODO: milena usa el minitramp (cosa que no puede hacer!) */
 //		
+//TODO: validar que no se pueda 
 	}
 //***********************Punto 2*************************************
 	test "sesion leo" {
 		assert.that(leo.puedeHacerSesion())	
+		//TODO, el valor deberia poder ser accesible desde el objeto, no por parametro
 		leo.realizarSesion(valorPacienteRapido.valorDeRecuperacion())
 //		/*TODO: leo hace la sesion */
 		assert.equals(1.8, leo.nivelDeDolor()) //10 -4 -4 - 0.2 =  1.8		
@@ -96,6 +99,7 @@ describe "group of tests" {
 	test "sesion milena" {
 		assert.notThat(milena.puedeHacerSesion())	
 //		/* milena hace la sesion (cosa que no puede hacer) */
+//TODO: validar que nos e pueda 
 	}	
 //
 //***********************Punto 3*************************************//
